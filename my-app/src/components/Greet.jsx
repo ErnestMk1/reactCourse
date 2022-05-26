@@ -1,6 +1,8 @@
-const Greet = () => {
+const Greet = (props) => {
   return (
-    <h1>Ukraine will beat russians!</h1>
+    <div>
+      <h1>Ukraine will beat russians! Batko nash {props.name} Ukraina matu</h1>
+    </div>
   )
 };
 
