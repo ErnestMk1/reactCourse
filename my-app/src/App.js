@@ -1,16 +1,20 @@
 import cs from './App.module.css';
 import Counter from './components/Counter';
-import Greet from './components/Greet';
-import Greetings from './components/GreetClass';
+import EventBind from './components/EventBind';
+import Greeting from './components/Greeting';
 import Message from './components/Message';
+import NameList from './components/NameList';
+import ParentComponent from './components/ParentComponent';
 
 const App = () => {
   return (
     <div className={cs.App}>
-      {/* <Greet name="BANDERA"/>
-      <Greetings someProps="wannaMakeMoney"/> */}
       {/* <Message /> */}
-      <Counter />
+      {/* <Counter /> */}
+      {/* <EventBind /> */}
+      {/* <ParentComponent /> */}
+      {/* <Greeting /> */}
+      <NameList />
     </div>
   );
 };
