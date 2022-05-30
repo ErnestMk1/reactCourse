@@ -1,0 +1,16 @@
+.formContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+}
+
+.formElement {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+}
+
+.textArea textarea{
+  resize: none;
+}

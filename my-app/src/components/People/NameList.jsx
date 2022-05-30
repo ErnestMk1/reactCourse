@@ -1,4 +1,5 @@
 import Person from "./Person";
+import css from './NameList.module.css';
 
 const NameList = () => {
   const persons = [
@@ -26,7 +27,7 @@ const NameList = () => {
   ];
 
   return (
-    <div>
+    <div className={css.mainDiv}>
       {persons.map(person => <Person key={person.id} person={person}/>)}
     </div>
   );

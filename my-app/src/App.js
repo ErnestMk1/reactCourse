@@ -1,20 +1,20 @@
 import cs from './App.module.css';
-import Counter from './components/Counter';
 import EventBind from './components/EventBind';
 import Greeting from './components/Greeting';
 import Message from './components/Message';
-import NameList from './components/NameList';
-import ParentComponent from './components/ParentComponent';
+import NameList from './components/People/NameList';
+import Form from './components/Form/Form';
+import LifecycleA from './components/LifecycleA';
 
 const App = () => {
   return (
     <div className={cs.App}>
       {/* <Message /> */}
-      {/* <Counter /> */}
       {/* <EventBind /> */}
-      {/* <ParentComponent /> */}
       {/* <Greeting /> */}
-      <NameList />
+      {/* <NameList /> */}
+      {/* <Form /> */}
+      <LifecycleA />
     </div>
   );
 };
