@@ -1,10 +1,10 @@
 import cs from './App.module.css';
-import HookCounterFour from './components/Hooks/HookCounterFour';
+import DataFetching from './components/Hooks/useEffect/DataFetching';
 
 const App = () => {
   return (
     <div className={cs.App}>
-      <HookCounterFour />
+      <DataFetching />
     </div>
   );
 };
