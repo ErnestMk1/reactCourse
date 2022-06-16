@@ -1,13 +1,13 @@
 import cs from './App.module.css';
 import React from 'react';
-import CounterOne from './components/Hooks/useReducer/CounterOne';
-import CounterTwo from './components/Hooks/useReducer/CounterTwo';
+import OneDataFetching from './components/Hooks/Fetching/OneDataFetching';
+import TwoDataFetching from './components/Hooks/Fetching/TwoDataFetching';
 
 const App = () => {
   return (
     <div className={cs.App}>
-      {/* <CounterOne /> */}
-      <CounterTwo />
+      {/* <OneDataFetching /> */}
+      <TwoDataFetching />
     </div>
   );
 };
