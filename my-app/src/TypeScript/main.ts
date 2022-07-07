@@ -1,5 +1,16 @@
-export function twoOldestAges(ages: number[]): number[] {
-  return ages.sort((a: number, b: number) => a - b).slice(ages.length - 2);
+export const findOdd = (xs: number[]) => {
+  const isOdd = (num: number): boolean => {
+    return num % 2 === 1;
+  };
+
+  const uniqueItems = Array.from(new Set(xs));
+  for (const uniqueItem of uniqueItems) {
+    const numberOccurences = xs.filter(item => item === uniqueItem).length;
+    if (isOdd(numberOccurences)) return uniqueItem;
+  }
+
+  Error('you lied. There are no numbers');
 };
 
-console.log(twoOldestAges([1, 5, 87, 45, 8, 8]));
+console.log(findOdd([1, 2,2,3,3,3,4,3,3,3,2,2,1]));
+// sorted one: [1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 4]
